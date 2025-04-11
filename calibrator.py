@@ -22,7 +22,8 @@ def get_stream_url(url):
         return info['url']
 
 stream_url = get_stream_url(youtube_url)
-cap = cv2.VideoCapture(stream_url)
+# cap = cv2.VideoCapture(stream_url)
+cap = cv2.VideoCapture("video.mp4")  # Use local video for testing
 
 counter_a, counter_b = 0, 0
 current_box = None
